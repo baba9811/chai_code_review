@@ -1,6 +1,6 @@
 from typing import Dict
 from transformers.models.auto.tokenization_auto import AutoTokenizer
-from neural_chat.craigslist.parse import Event # test2
+from neural_chat.craigslist.parse import Event
 from tqdm import tqdm
 from transformers import AutoModel, AutoTokenizer
 from neural_chat.craigslist import Craigslist, Agent
