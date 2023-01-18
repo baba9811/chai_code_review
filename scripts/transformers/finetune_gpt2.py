@@ -8,7 +8,7 @@ from transformers import (
 )
 from torch.utils.data import Dataset
 import argparse
-from neural_chat.gpt2 import format_event
+from neural_chat.gpt2 import format_event # test
 from neural_chat.craigslist import Craigslist
 
 
