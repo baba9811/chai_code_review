@@ -1,3 +1,10 @@
+'''
+[사용 모듈 및 클래스]
+typing: type annotation 모듈
+transformers: hugging face에서 제공하는 GPT2 관련 모듈
+torch.utils.data.Dataset: PyTorch에 내장된 다양한 고품질 데이터셋 이용 가능
+argparse: command-line interface에서 더 쉽게 파일을 run할 수 있게 하는 모듈
+'''
 from typing import Tuple
 from transformers import (
     GPT2LMHeadModel,
@@ -31,7 +38,7 @@ class DialogDataset(Dataset):
         self.tokenizer = tokenizer
         self.block_size = block_size
 
-    def __len__(self):
+    def __len__(self): #(토큰 길이 // 256)-1
         return len(self.tokens) // self.block_size - 1
 
     def __getitem__(self, i):
