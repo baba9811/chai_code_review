@@ -1,3 +1,8 @@
+"""
+Expected Max Q-Learning +
+Conservative Q-Learning
+"""
+
 from neural_chat.logger.loggable import simpleloggable
 import torch
 import torch.nn.functional as F
